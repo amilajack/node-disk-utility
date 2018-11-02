@@ -1,0 +1,20 @@
+[package]
+name = "disk-utility"
+version = "0.1.0"
+authors = ["Amila Welihinda <amilajack@gmail.com>"]
+license = "MIT"
+build = "build.rs"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "disk_utility"
+crate-type = ["dylib"]
+
+[build-dependencies]
+neon-build = "0.2.0"
+
+[dependencies]
+neon = "0.2.0"
+ignore = "0.4.3"
+num_cpus = "1.0"
+humansize = "1.1"
