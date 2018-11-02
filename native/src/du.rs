@@ -90,7 +90,7 @@ fn format_result(size: u64) -> String {
     )
 }
 
-pub fn dir_size(thread_count: Option<usize>) -> String {
+pub fn dir_size(thread_count: Option<usize>, dir: String) -> String {
     // Setting the number of threads to 3x the number of cores is a good tradeoff between
     // cold-cache and warm-cache runs. For a cold disk cache, we are limited by disk IO and
     // therefore want the number of threads to be rather large in order for the IO scheduler to
@@ -105,6 +105,6 @@ pub fn dir_size(thread_count: Option<usize>) -> String {
         }
     };
 
-    let size = get_size(".", num_threads);
+    let size = get_size(dir, num_threads);
     format_result(size)
 }

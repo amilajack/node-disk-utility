@@ -13,4 +13,7 @@ import diskUtility from 'disk-utility';
 
 // calculate the size of a disk in parallel
 diskUtility.dirSize(__dirname);
+
+// Pass optional core count
+diskUtility.dirSize(__dirname, 4);
 ```
