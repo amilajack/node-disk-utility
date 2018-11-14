@@ -17,6 +17,7 @@ fn dir_size(mut cx: FunctionContext) -> JsResult<JsString> {
         },
         None => None
     };
+
     let dir_size = du::dir_size(threads, path);
     Ok(cx.string(dir_size))
 }
