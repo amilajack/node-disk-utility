@@ -25,7 +25,7 @@
     "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
     "lint": "eslint .",
     "package": "node-pre-gyp package",
-    "publish": "node-pre-gyp package && node-pre-gyp-github publish",
+    "upload-binary": "node-pre-gyp package && node-pre-gyp-github publish",
     "test": "jest ."
   },
   "devDependencies": {
