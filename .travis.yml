@@ -3,17 +3,23 @@ matrix:
     - os: windows
   include:
     - os: osx
-      language: rust
-      rust: nightly-2018-10-12
+      language: node_js
+      node_js:
+        - node
+        - 10
+        - 9
+        - 8
       env:
-        - TRAVIS_NODE_VERSION="11"
         - ELECTRON_CACHE=$HOME/.cache/electron
         - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
     - os: linux
-      language: rust
-      rust: nightly-2018-10-12
+      language: node_js
+      node_js:
+        - node
+        - 10
+        - 9
+        - 8
       env:
-        - TRAVIS_NODE_VERSION="11"
         - ELECTRON_CACHE=$HOME/.cache/electron
         - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
       addons:
@@ -25,19 +31,27 @@ matrix:
             - g++-8
             - g++-multilib
     - os: windows
-      language: rust
-      rust: nightly-2018-10-12
+      language: node_js
+      node_js:
+        - node
+        - 10
+        - 9
+        - 8
       env:
-        - TRAVIS_NODE_VERSION="11"
         - ELECTRON_CACHE=$HOME/.cache/electron
         - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
 
-cache: cargo
+cache:
+  - yarn: true
+  - cargo: true
 
 before_install:
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then export CXX="g++-8"; fi
-  - nvm install $TRAVIS_NODE_VERSION
-  - nvm use ${TRAVIS_NODE_VERSION}
+  # Install Rust and Cargo
+  - curl https://sh.rustup.rs -sSf > /tmp/rustup.sh
+  - sh /tmp/rustup.sh -y
+  - export PATH="$HOME/.cargo/bin:$PATH"
+  - source "$HOME/.cargo/env"
+  # Install global NPM packages
   - node -v
   - npm -v
   - npm i -g yarn@latest neon-cli@latest lerna@latest
@@ -45,3 +59,4 @@ before_install:
 
 script:
   - yarn test
+  - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; yarn publish; fi
