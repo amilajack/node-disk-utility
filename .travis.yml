@@ -45,4 +45,3 @@ before_install:
 
 script:
   - yarn test
-

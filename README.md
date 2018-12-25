@@ -19,3 +19,12 @@ diskUtility.dirSize(__dirname);
 // Pass optional core count
 diskUtility.dirSize(__dirname, 4);
 ```
+
+## Local Setup
+
+```bash
+git clone https://github.com/amilajack/disk-utility
+cd disk-utility
+yarn
+yarn test
+```
