@@ -13,7 +13,7 @@ npm install disk-utility
 ```js
 import diskUtility from 'disk-utility';
 
-// calculate the size of a disk in parallel
+// Calculate the size of a directory
 diskUtility.dirSize(__dirname);
 
 // Pass optional core count
