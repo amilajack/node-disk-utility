@@ -1,4 +1,4 @@
-const addon = require('..');
+const addon = require('../native/index.node');
 
 describe('basic', () => {
     it('should get dir size', () => {
