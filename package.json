@@ -23,11 +23,14 @@
   },
   "scripts": {
     "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
+    "lint": "eslint .",
     "package": "node-pre-gyp package",
     "publish": "node-pre-gyp package && node-pre-gyp-github publish",
     "test": "jest ."
   },
   "devDependencies": {
+    "eslint": "^5.11.0",
+    "eslint-config-bliss": "^3.1.2",
     "jest": "^23.6.0"
   },
   "binary": {
@@ -37,5 +40,8 @@
     "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
     "module_path": "./native",
     "pkg_path": "."
+  },
+  "eslintConfig": {
+    "extends": "bliss"
   }
 }
