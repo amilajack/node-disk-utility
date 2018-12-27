@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/amilajack/disk-utility.svg?branch=master)](https://travis-ci.org/amilajack/disk-utility)
 
+Quickly calculate the size of a folder or disk on macOS and Linux
+
 ## Installation
 
 ```bash
