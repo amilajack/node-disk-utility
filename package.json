@@ -1,7 +1,7 @@
 {
   "name": "disk-utility",
   "version": "0.0.2-0",
-  "description": "Disk utility methods in node provided with native bindings to Rust using Neon",
+  "description": "Quickly calculate the size of a folder or disk on macOS and Linux",
   "main": "lib/index.js",
   "author": "Amila Welihinda <amilajack@gmail.com>",
   "repository": {
