@@ -4,6 +4,12 @@
 
 Quickly calculate the size of a folder or disk on macOS and Linux
 
+## Features
+
+* Does not depend on system dependencies (like [`du`](https://en.wikipedia.org/wiki/Du_(Unix)))
+* Cross-platform (waiting on windows support)
+* Built using [Neon](https://github.com/neon-bindings/neon)!
+
 ## Installation
 
 ```bash
