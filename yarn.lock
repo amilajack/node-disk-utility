@@ -1166,10 +1166,10 @@ eslint-config-airbnb-base@^13.1.0:
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
-eslint-config-bliss@^3.1.2:
-  version "3.1.2"
-  resolved "https://registry.npmjs.org/eslint-config-bliss/-/eslint-config-bliss-3.1.2.tgz#9481e30389575b54c0ce15afc27e2c6472bb4bab"
-  integrity sha512-mYP6mHYrQ1fVapYtyVFOXZdJOTlwbs/55PXHULH0BX6JCY7SzHG2Bg6v7SNQQvxEuWPPY+iaMT2abiq4o02SVg==
+eslint-config-bliss@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-bliss/-/eslint-config-bliss-3.2.0.tgz#773902614a0d85db69f17ae1c5e54d5ebb4bed95"
+  integrity sha512-M+zZ9DcdNAJsvLBOo5JhgEeSO3Cqc1BCOxqGErKlXKlQWmAlVtEgBE6a0DIkJRLCllDXEkh+tPJSPQAxtyQZNQ==
   dependencies:
     babel-eslint "^10.0.1"
     eslint-config-airbnb-base "^13.1.0"
@@ -1178,7 +1178,7 @@ eslint-config-bliss@^3.1.2:
     eslint-plugin-flowtype-errors "^3.6.0"
     eslint-plugin-import "^2.14.0"
     eslint-plugin-jest "^22.1.2"
-    eslint-plugin-prettier "^3.0.0"
+    eslint-plugin-prettier "^3.0.1"
     eslint-plugin-promise "^4.0.1"
     flow-bin "^0.89.0"
     prettier "^1.15.3"
@@ -1245,10 +1245,10 @@ eslint-plugin-jest@^22.1.2:
   resolved "https://registry.npmjs.org/eslint-plugin-jest/-/eslint-plugin-jest-22.1.2.tgz#1ea36cc3faedbdb788e702ca633d635ca14e91e8"
   integrity sha512-jSPT4rVmNetkeCIyrvvOM0wJtgoUSbKHIUDoOGzIISsg51eWN/nISPNKVM+jXMMDI9oowbyapOnpKSXlsLiDpQ==
 
-eslint-plugin-prettier@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/eslint-plugin-prettier/-/eslint-plugin-prettier-3.0.0.tgz#f6b823e065f8c36529918cdb766d7a0e975ec30c"
-  integrity sha512-4g11opzhqq/8+AMmo5Vc2Gn7z9alZ4JqrbZ+D4i8KlSyxeQhZHlmIrY8U9Akf514MoEhogPa87Jgkq87aZ2Ohw==
+eslint-plugin-prettier@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.0.1.tgz#19d521e3981f69dd6d14f64aec8c6a6ac6eb0b0d"
+  integrity sha512-/PMttrarPAY78PLvV3xfWibMOdMDl57hmlQ2XqFeA37wd+CJ7WSxV7txqjVPHi/AAFKd2lX0ZqfsOc/i5yFCSQ==
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
