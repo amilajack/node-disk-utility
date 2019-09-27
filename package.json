@@ -17,11 +17,12 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "neon-cli": "^0.2.0",
+    "neon-cli": "^0.3.1",
     "node-pre-gyp": "amilajack/node-pre-gyp#neon-compat",
     "node-pre-gyp-github": "^1.4.3"
   },
   "scripts": {
+    "build": "neon build",
     "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
     "lint": "eslint .",
     "package": "node-pre-gyp package",
@@ -29,9 +30,9 @@
     "test": "jest ."
   },
   "devDependencies": {
-    "eslint": "^5.14.1",
-    "eslint-config-bliss": "^3.3.0",
-    "jest": "^24.1.0"
+    "eslint": "^6.4.0",
+    "eslint-config-bliss": "^4.3.0",
+    "jest": "^24.9.0"
   },
   "binary": {
     "module_name": "index",
