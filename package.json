@@ -1,6 +1,6 @@
 {
   "name": "disk-utility",
-  "version": "0.0.2-0",
+  "version": "0.0.2",
   "description": "Quickly calculate the size of a folder or disk on macOS and Linux",
   "main": "lib/index.js",
   "author": "Amila Welihinda <amilajack@gmail.com>",
