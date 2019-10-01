@@ -15,6 +15,6 @@ neon-build = "0.3.1"
 
 [dependencies]
 neon = "0.3.1"
-diskus = "0.5.0"
+diskus = "0.6.0"
 num_cpus = "1.0"
 humansize = "1.1"
