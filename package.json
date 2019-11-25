@@ -30,7 +30,7 @@
     "test": "jest ."
   },
   "devDependencies": {
-    "eslint": "^6.4.0",
+    "eslint": "^6.7.1",
     "eslint-config-bliss": "^4.3.0",
     "jest": "^24.9.0"
   },
