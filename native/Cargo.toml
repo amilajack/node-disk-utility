@@ -11,10 +11,10 @@ name = "disk_utility"
 crate-type = ["dylib"]
 
 [build-dependencies]
-neon-build = "0.3.1"
+neon-build = "0.3.3"
 
 [dependencies]
-neon = "0.3.1"
+neon = "0.3.3"
 diskus = "0.5.0"
 num_cpus = "1.0"
 humansize = "1.1"
