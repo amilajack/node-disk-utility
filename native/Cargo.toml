@@ -2,6 +2,7 @@
 name = "disk-utility"
 version = "0.1.0"
 authors = ["Amila Welihinda <amilajack@gmail.com>"]
+edition = "2018"
 license = "MIT"
 build = "build.rs"
 exclude = ["artifacts.json", "index.node"]

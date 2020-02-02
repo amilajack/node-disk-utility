@@ -23,12 +23,14 @@
   },
   "scripts": {
     "build": "neon build",
-    "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
+    "build-release": "neon build --release",
+    "install": "node-pre-gyp install --fallback-to-build=false || neon build",
     "lint": "eslint .",
     "package": "node-pre-gyp package",
     "spec": "jest",
     "test": "yarn build && yarn spec",
-    "upload-binary": "node-pre-gyp package && node-pre-gyp-github publish"
+    "upload-binary": "yarn build-release && node-pre-gyp package && node-pre-gyp-github publish",
+    "version": "yarn build-release"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -44,7 +46,10 @@
     "pkg_path": "."
   },
   "eslintConfig": {
-    "extends": "bliss"
+    "extends": "bliss",
+    "rules": {
+      "flowtype-errors/show-errors": "off"
+    }
   },
   "jest": {
     "testEnvironment": "node"
