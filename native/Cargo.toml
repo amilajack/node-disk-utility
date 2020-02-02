@@ -8,7 +8,7 @@ exclude = ["artifacts.json", "index.node"]
 
 [lib]
 name = "disk_utility"
-crate-type = ["dylib"]
+crate-type = ["cdylib"]
 
 [build-dependencies]
 neon-build = "0.3.3"

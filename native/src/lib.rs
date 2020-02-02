@@ -1,4 +1,3 @@
-#[macro_use]
 extern crate neon;
 extern crate diskus;
 extern crate humansize;

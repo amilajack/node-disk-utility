@@ -26,13 +26,14 @@
     "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
     "lint": "eslint .",
     "package": "node-pre-gyp package",
-    "upload-binary": "node-pre-gyp package && node-pre-gyp-github publish",
-    "test": "jest ."
+    "spec": "jest",
+    "test": "yarn build && yarn spec",
+    "upload-binary": "node-pre-gyp package && node-pre-gyp-github publish"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-bliss": "^4.6.0",
-    "jest": "^24.9.0"
+    "jest": "^25.1.0"
   },
   "binary": {
     "module_name": "index",
