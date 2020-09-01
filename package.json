@@ -33,7 +33,7 @@
     "version": "yarn build-release"
   },
   "devDependencies": {
-    "eslint": "^7.6.0",
+    "eslint": "^7.8.0",
     "eslint-config-bliss": "^4.8.1",
     "jest": "^25.5.4"
   },
