@@ -133,8 +133,8 @@ version = "0.1.0"
 dependencies = [
  "diskus 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "humansize 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "neon 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "neon-build 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "neon 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "neon-build 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "num_cpus 1.13.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -198,36 +198,37 @@ dependencies = [
 
 [[package]]
 name = "neon"
-version = "0.4.0"
+version = "0.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "cslice 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "neon-build 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "neon-runtime 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "neon-build 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "neon-runtime 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "semver 0.9.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "winapi 0.3.9 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "neon-build"
-version = "0.4.0"
+version = "0.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "cfg-if 0.1.10 (registry+https://github.com/rust-lang/crates.io-index)",
- "neon-sys 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "neon-sys 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "neon-runtime"
-version = "0.4.0"
+version = "0.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "cfg-if 0.1.10 (registry+https://github.com/rust-lang/crates.io-index)",
- "neon-sys 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "neon-sys 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "neon-sys"
-version = "0.4.0"
+version = "0.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "cc 1.0.56 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -385,10 +386,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum maybe-uninit 2.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "60302e4db3a61da70c0cb7991976248362f30319e88850c487b9b95bbf059e00"
 "checksum memchr 2.3.3 (registry+https://github.com/rust-lang/crates.io-index)" = "3728d817d99e5ac407411fa471ff9800a778d88a24685968b36824eaf4bee400"
 "checksum memoffset 0.5.4 (registry+https://github.com/rust-lang/crates.io-index)" = "b4fc2c02a7e374099d4ee95a193111f72d2110197fe200272371758f6c3643d8"
-"checksum neon 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "6cac4691701b686e6c07b2eb5b51a9f26f5c11179c5d7924b78100dd387fc99d"
-"checksum neon-build 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "f9ed332afd4711b84f4f83d334428a1fd9ce53620b62b87595934297c5ede2ed"
-"checksum neon-runtime 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "2beea093a60c08463f65e1da4cda68149986f60d8d2177489b44589463c782a6"
-"checksum neon-sys 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "69a6c1ba6b926746f4d3f596de18ce49d062d78fd9f35f636080232aa77a0e16"
+"checksum neon 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)" = "c1329a928dbbe3567463cb1a0fd91aacd80a405cff7fc263face08fe84d6d624"
+"checksum neon-build 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)" = "d87d486730722e8b35abdecd5b0c18caef39af2447f5685f53d17012541fe471"
+"checksum neon-runtime 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)" = "8af12f21cf0f36c0821ba4a1914b3002e81737f41bd5326cd6776b409b2cde94"
+"checksum neon-sys 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)" = "1c96a52171c74ad7a00472c0fe9420620f618c72866ab5b549596895a59129ed"
 "checksum num_cpus 1.13.0 (registry+https://github.com/rust-lang/crates.io-index)" = "05499f3756671c15885fee9034446956fff3f243d6077b91e5767df161f766b3"
 "checksum rayon 1.3.1 (registry+https://github.com/rust-lang/crates.io-index)" = "62f02856753d04e03e26929f820d0a0a337ebe71f849801eea335d464b349080"
 "checksum rayon-core 1.7.1 (registry+https://github.com/rust-lang/crates.io-index)" = "e92e15d89083484e11353891f1af602cc661426deb9564c298b270c726973280"
