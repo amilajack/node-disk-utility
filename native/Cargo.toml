@@ -12,7 +12,7 @@ name = "disk_utility"
 crate-type = ["cdylib"]
 
 [build-dependencies]
-neon-build = "0.4.0"
+neon-build = "0.4.2"
 
 [dependencies]
 neon = "0.4.0"
