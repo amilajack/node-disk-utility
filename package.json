@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "eslint": "^7.10.0",
-    "eslint-config-bliss": "^4.8.1",
+    "eslint-config-bliss": "^5.0.0",
     "jest": "^26.4.2"
   },
   "binary": {
