@@ -17,7 +17,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "neon-cli": "^0.4.2",
+    "neon-cli": "^0.5.1",
     "node-pre-gyp": "amilajack/node-pre-gyp#neon-compat",
     "node-pre-gyp-github": "^1.4.3"
   },
