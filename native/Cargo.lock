@@ -188,7 +188,7 @@ dependencies = [
  "diskus",
  "humansize",
  "neon",
- "neon-build",
+ "neon-build 0.5.3",
  "num_cpus",
 ]
 
@@ -335,16 +335,15 @@ dependencies = [
 
 [[package]]
 name = "neon"
-version = "0.5.3"
+version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ed5c7d2adba1e3aeae2dd4a5e2897c198893b053c6aff8b36a252f28e146bb73"
+checksum = "ade23143c81b3d3e7648521e06f63d6ce055059e5280451282f16b61fadd99b0"
 dependencies = [
  "cslice",
- "neon-build",
+ "neon-build 0.6.0",
  "neon-runtime",
  "semver",
  "smallvec",
- "winapi",
 ]
 
 [[package]]
@@ -354,15 +353,23 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "705d33783a2af324a7096bda033cf0c7d62aaca586a49caf99a20df613ac8ee0"
 dependencies = [
  "cfg-if 0.1.10",
- "neon-sys",
  "ureq",
 ]
 
 [[package]]
-name = "neon-runtime"
-version = "0.5.3"
+name = "neon-build"
+version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "eb521d36f95abdcf13d9079315fbebfc294209ca1a4bf72bbd42cffd28f27719"
+checksum = "eba1f19760f7447f7c29873d66afc7bdb44c9bfdb09bb2abf08af85c8af1cb18"
+dependencies = [
+ "neon-sys",
+]
+
+[[package]]
+name = "neon-runtime"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bcddb16d2645a7fa148c87b61555b21c9c5b926b842df93a0a46f8be342f8733"
 dependencies = [
  "cfg-if 0.1.10",
  "neon-sys",
@@ -371,9 +378,9 @@ dependencies = [
 
 [[package]]
 name = "neon-sys"
-version = "0.5.3"
+version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "40aa4682d8f719e4944b1f9460c2f9620731de14910794f22da681e2c4ac294e"
+checksum = "d4cb0f36c7a8579d305e24efaa4945c85f636b0125c0ea0cf594ca43b6624736"
 dependencies = [
  "cc",
  "regex",
