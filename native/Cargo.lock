@@ -226,9 +226,9 @@ dependencies = [
 
 [[package]]
 name = "neon"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ade23143c81b3d3e7648521e06f63d6ce055059e5280451282f16b61fadd99b0"
+checksum = "a171c5739a277a667669678475165bdbaec1769010e167706c365fd2f98d4f39"
 dependencies = [
  "cslice",
  "neon-build",
@@ -239,29 +239,29 @@ dependencies = [
 
 [[package]]
 name = "neon-build"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "eba1f19760f7447f7c29873d66afc7bdb44c9bfdb09bb2abf08af85c8af1cb18"
+checksum = "69c4ddb734e07eeb082b1db7e94b47efd385a3672229ca758a2e2c128263db7f"
 dependencies = [
  "neon-sys",
 ]
 
 [[package]]
 name = "neon-runtime"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bcddb16d2645a7fa148c87b61555b21c9c5b926b842df93a0a46f8be342f8733"
+checksum = "e4c2ae6cb6d5f5a546f5f43dc0318ae90c237b8c0fd30364e299abb7e5cda913"
 dependencies = [
- "cfg-if 0.1.10",
+ "cfg-if 1.0.0",
  "neon-sys",
  "smallvec",
 ]
 
 [[package]]
 name = "neon-sys"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d4cb0f36c7a8579d305e24efaa4945c85f636b0125c0ea0cf594ca43b6624736"
+checksum = "f054b2f3b77e6d686792521c0fd8dd5b3a5fee17a08e951de908b8bd799ec115"
 dependencies = [
  "cc",
  "regex",

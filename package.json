@@ -18,7 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "neon-cli": "^0.5.3",
-    "node-pre-gyp": "amilajack/node-pre-gyp#neon-compat",
+    "node-pre-gyp": "^0.17.0",
     "node-pre-gyp-github": "^1.4.3"
   },
   "scripts": {
@@ -28,9 +28,9 @@
     "lint": "eslint .",
     "package": "node-pre-gyp package",
     "spec": "jest",
-    "test": "yarn build && yarn spec",
-    "upload-binary": "yarn build-release && node-pre-gyp package && node-pre-gyp-github publish",
-    "version": "yarn build-release"
+    "test": "npm run build && npm run spec",
+    "upload-binary": "npm run build-release && node-pre-gyp package && node-pre-gyp-github publish",
+    "version": "npm run build-release"
   },
   "devDependencies": {
     "eslint": "^7.16.0",

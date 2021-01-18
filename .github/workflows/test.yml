@@ -42,4 +42,4 @@ jobs:
       - name: Publish
         run: |
           COMMIT_MESSAGE=$(git log --format=%B --no-merges -n 1 | tr -d '\n') \
-          if [[ ${COMMIT_MESSAGE} =~ "[publish binary]" ]]; then yarn upload-binary || exit 0; fi;
+          if [[ ${COMMIT_MESSAGE} =~ "[publish binary]" ]]; then npm run upload-binary || exit 0; fi;

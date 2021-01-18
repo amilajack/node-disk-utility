@@ -33,6 +33,6 @@ diskUtility.dirSize(__dirname, 4);
 ```bash
 git clone https://github.com/amilajack/disk-utility
 cd disk-utility
-yarn
-yarn test
+npm install
+npm test
 ```
