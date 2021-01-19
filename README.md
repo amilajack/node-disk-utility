@@ -2,7 +2,7 @@
 
 ![CI](https://github.com/amilajack/node-disk-utility/workflows/CI/badge.svg)
 
-Quickly calculate the size of a folder or disk on macOS and Linux
+Quickly calculate the size of a folder or disk on macOS, Linux, and Windows.
 
 ## Features
 
