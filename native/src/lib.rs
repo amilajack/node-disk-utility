@@ -5,7 +5,7 @@ extern crate num_cpus;
 
 use std::path::PathBuf;
 use humansize::{file_size_opts, FileSize};
-use diskus::Walk;
+use diskus::{Walk, FilesizeType};
 use neon::prelude::*;
 
 fn format_result(size: u64) -> String {
@@ -39,9 +39,9 @@ fn dir_size(mut cx: FunctionContext) -> JsResult<JsString> {
         }
     };
 
-    let walk = Walk::new(&path_bufs, num_threads);
+    let walk = Walk::new(&path_bufs, num_threads, FilesizeType::DiskUsage);
     let size_in_bytes = walk.run();
-    let dir_size = format_result(size_in_bytes);
+    let dir_size = format_result(size_in_bytes.0);
 
     Ok(cx.string(dir_size))
 }

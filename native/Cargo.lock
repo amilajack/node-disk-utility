@@ -19,6 +19,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "arrayvec"
+version = "0.4.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cd9fd44efafa8690358b7408d253adf110036b88f55672a933f01d616ad9b1b9"
+dependencies = [
+ "nodrop",
+]
+
+[[package]]
 name = "atty"
 version = "0.2.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -165,13 +174,15 @@ dependencies = [
 
 [[package]]
 name = "diskus"
-version = "0.5.0"
+version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "074c7500ad38ee274d1324d559d3671ef2b6f28d9114deda3d8a19d305e8d125"
+checksum = "1895eb8c4261ccc813536f9dee3ff5140398080dd53702f7a65b4421582afa01"
 dependencies = [
+ "atty",
  "clap",
  "crossbeam-channel 0.3.9",
  "humansize",
+ "num-format",
  "num_cpus",
  "rayon",
 ]
@@ -196,6 +207,12 @@ name = "humansize"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b6cab2627acfc432780848602f3f558f7e9dd427352224b0d9324025796d2a5e"
+
+[[package]]
+name = "itoa"
+version = "0.4.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dd25036021b0de88a0aff6b850051563c6516d0bf53f8638938edbb9de732736"
 
 [[package]]
 name = "lazy_static"
@@ -265,6 +282,22 @@ checksum = "f054b2f3b77e6d686792521c0fd8dd5b3a5fee17a08e951de908b8bd799ec115"
 dependencies = [
  "cc",
  "regex",
+]
+
+[[package]]
+name = "nodrop"
+version = "0.1.14"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "72ef4a56884ca558e5ddb05a1d1e7e1bfd9a68d9ed024c21704cc98872dae1bb"
+
+[[package]]
+name = "num-format"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bafe4179722c2894288ee77a9f044f02811c86af699344c498b0840c698a2465"
+dependencies = [
+ "arrayvec",
+ "itoa",
 ]
 
 [[package]]
