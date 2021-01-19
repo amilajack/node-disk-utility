@@ -1,6 +1,6 @@
 # disk-utility
 
-[![Build Status](https://travis-ci.org/amilajack/disk-utility.svg?branch=master)](https://travis-ci.org/amilajack/disk-utility)
+![CI](https://github.com/amilajack/node-disk-utility/workflows/CI/badge.svg)
 
 Quickly calculate the size of a folder or disk on macOS and Linux
 
