@@ -17,7 +17,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "neon-cli": "^0.8.2",
+    "neon-cli": "^0.8.3",
     "node-pre-gyp": "^0.17.0",
     "node-pre-gyp-github": "^1.4.3"
   },
