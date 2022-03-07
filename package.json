@@ -35,7 +35,7 @@
   "devDependencies": {
     "eslint": "^7.16.0",
     "eslint-config-bliss": "^5.0.0",
-    "jest": "^26.6.3"
+    "jest": "^27.5.1"
   },
   "binary": {
     "module_name": "index",
