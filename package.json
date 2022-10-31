@@ -2,48 +2,39 @@
   "name": "disk-utility",
   "version": "0.0.2",
   "description": "Quickly calculate the size of a folder or disk on macOS and Linux",
-  "main": "lib/index.js",
-  "author": "Amila Welihinda <amilajack@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/amilajack/disk-utility/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amilajack/disk-utility.git"
   },
-  "bugs": {
-    "url": "https://github.com/amilajack/disk-utility/issues"
-  },
+  "license": "MIT",
+  "author": "Amila Welihinda <amilajack@gmail.com>",
+  "main": "index.node",
   "files": [
     "native/index.node",
     "lib"
   ],
-  "license": "MIT",
-  "dependencies": {
-    "neon-cli": "^0.9.1",
-    "node-pre-gyp": "^0.17.0",
-    "node-pre-gyp-github": "^1.4.3"
+  "binary": {
+    "module_name": "index",
+    "module_path": "./native",
+    "remote_path": "{version}",
+    "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
+    "host": "https://github.com/amilajack/disk-utility/releases/download/",
+    "pkg_path": "."
   },
   "scripts": {
-    "build": "neon build",
-    "build-release": "neon build --release",
-    "install": "node-pre-gyp install --fallback-to-build=false || neon build",
+    "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics",
+    "build-debug": "npm run build --",
+    "build-release": "npm run build -- --release",
+    "install": "npm run build-release",
     "lint": "eslint .",
     "package": "node-pre-gyp package",
     "spec": "jest",
     "test": "npm run build && npm run spec",
     "upload-binary": "npm run build-release && node-pre-gyp package && node-pre-gyp-github publish",
     "version": "npm run build-release"
-  },
-  "devDependencies": {
-    "eslint": "^7.16.0",
-    "eslint-config-bliss": "^5.0.0",
-    "jest": "^26.6.3"
-  },
-  "binary": {
-    "module_name": "index",
-    "host": "https://github.com/amilajack/disk-utility/releases/download/",
-    "remote_path": "{version}",
-    "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
-    "module_path": "./native",
-    "pkg_path": "."
   },
   "eslintConfig": {
     "extends": "bliss",
@@ -53,6 +44,17 @@
   },
   "jest": {
     "testEnvironment": "node"
+  },
+  "dependencies": {
+    "neon-cli": "^0.10.1",
+    "node-pre-gyp": "^0.17.0",
+    "node-pre-gyp-github": "^1.4.4"
+  },
+  "devDependencies": {
+    "cargo-cp-artifact": "^0.1",
+    "eslint": "^8.26.0",
+    "eslint-config-bliss": "^6.0.4",
+    "jest": "^29.2.2"
   },
   "renovate": {
     "extends": [
