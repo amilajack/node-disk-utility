@@ -4,18 +4,19 @@ version = "0.1.0"
 authors = ["Amila Welihinda <amilajack@gmail.com>"]
 edition = "2018"
 license = "MIT"
-build = "build.rs"
-exclude = ["artifacts.json", "index.node"]
+exclude = ["index.node"]
 
 [lib]
 name = "disk_utility"
 crate-type = ["cdylib"]
 
-[build-dependencies]
-neon-build = "0.7.1"
+[dependencies.neon]
+version = "0.10"
+default-features = false
+features = ["napi-6"]
+
 
 [dependencies]
-neon = "0.7.0"
 diskus = "0.6.0"
 num_cpus = "1.13"
 humansize = "1.1"
